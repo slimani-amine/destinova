@@ -80,6 +80,7 @@ const Navbar = () => {
         </div>
         <nav className="hidden lg:flex flex-row items-center gap-6">
           <NavItem to="home">Home</NavItem>
+          <NavItem to="stats">Stats</NavItem>
           <NavItem to="features">Features</NavItem>
           <NavItem to="destination">Destination</NavItem>
           <NavItem to="about">About</NavItem>
@@ -106,6 +107,7 @@ const Navbar = () => {
         } lg:hidden flex flex-col absolute bg-darkBackground text-white left-0 top-20 font-semibold text-2xl text-center pt-8 pb-4 gap-8 w-full h-fit transition-transform duration-300 shadow-lg`}
       >
         <NavItem to="home">Home</NavItem>
+        <NavItem to="stats">Stats</NavItem>   
         <NavItem to="features">Features</NavItem>
         <NavItem to="destination">Destination</NavItem>
         <NavItem to="about">About</NavItem>

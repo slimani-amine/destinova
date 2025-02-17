@@ -12,6 +12,7 @@ import AllDestinations from "./pages/AllDestinations";
 import ScrollToTop from "./components/ScrollToTop";
 import DestinationDetails from "./pages/DestinationDetails";
 import Testimonials from "./components/Testimonials";
+import Stats from "./components/Stats";
 const AppContent = () => {
   return (
     <div className="pt-20">
@@ -26,6 +27,9 @@ const AppContent = () => {
             <main>
               <div id="home">
                 <Home />
+              </div>
+              <div id="stats">
+                <Stats />
               </div>
               <div id="features">
                 <Features />

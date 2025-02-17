@@ -2,7 +2,6 @@ import React from "react";
 import Button from "../layouts/Button";
 import img from "../assets/img/hero.jpg";
 import { Link } from "react-scroll";
-import Testimonials from "./Testimonials";
 
 const Home = () => {
   const backgroundColor = `bg-brightColor`;
@@ -29,6 +28,7 @@ const Home = () => {
           <img src={img} alt="img" />
         </div>
       </div>
+      
     </>
   );
 };
