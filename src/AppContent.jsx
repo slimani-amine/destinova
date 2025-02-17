@@ -11,7 +11,7 @@ import { Toaster } from "react-hot-toast";
 import AllDestinations from "./pages/AllDestinations";
 import ScrollToTop from "./components/ScrollToTop";
 import DestinationDetails from "./pages/DestinationDetails";
-
+import Testimonials from "./components/Testimonials";
 const AppContent = () => {
   return (
     <div className="pt-20">
@@ -35,6 +35,9 @@ const AppContent = () => {
               </div>
               <div id="about">
                 <About />
+              </div>
+              <div id="testimonials">
+                <Testimonials />
               </div>
               <div id="contact">
                 <Contact />

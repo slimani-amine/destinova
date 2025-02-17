@@ -83,6 +83,7 @@ const Navbar = () => {
           <NavItem to="features">Features</NavItem>
           <NavItem to="destination">Destination</NavItem>
           <NavItem to="about">About</NavItem>
+          <NavItem to="testimonials">Testimonials</NavItem>
           <NavItem to="contact">Contact</NavItem>
         </nav>
 
@@ -108,6 +109,7 @@ const Navbar = () => {
         <NavItem to="features">Features</NavItem>
         <NavItem to="destination">Destination</NavItem>
         <NavItem to="about">About</NavItem>
+        <NavItem to="testimonials">Testimonials</NavItem>
         <NavItem to="contact">Contact</NavItem>
 
         <div className="flex flex-col lg:hidden lg:flex-row items-center gap-4">
