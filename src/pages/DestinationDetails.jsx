@@ -8,6 +8,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar as faStarSolid } from "@fortawesome/free-solid-svg-icons";
 import { faStar as faStarRegular } from "@fortawesome/free-regular-svg-icons";
 import { Link as ScrollLink, scroller } from "react-scroll";
+import { motion } from "framer-motion";
 
 const DestinationDetails = () => {
   const { id } = useParams();
@@ -78,9 +79,17 @@ const DestinationDetails = () => {
   };
 
   return (
-    <div className="min-h-screen py-20 px-8 md:px-12">
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.5 }}
+      className="min-h-screen py-20 px-8 md:px-12"
+    >
       <div className="max-w-6xl mx-auto">
-        <div
+        <motion.div
+          initial={{ x: -20, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ delay: 0.2 }}
           onClick={handleBack}
           className="mb-8 text-gray-600 hover:text-gray-800 flex items-center gap-2 cursor-pointer"
         >
@@ -97,9 +106,14 @@ const DestinationDetails = () => {
             />
           </svg>
           Back
-        </div>
+        </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+        <motion.div
+          initial={{ y: 20, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ delay: 0.3 }}
+          className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12"
+        >
           <div className="relative">
             <img
               src={destination.mainImage}
@@ -149,7 +163,7 @@ const DestinationDetails = () => {
               <Button title="Book Now" onClick={handleBooking} />
             </div>
           </div>
-        </div>
+        </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           <div className="space-y-6">
@@ -221,7 +235,7 @@ const DestinationDetails = () => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

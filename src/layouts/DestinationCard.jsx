@@ -6,6 +6,8 @@ import { useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar as faStarSolid } from "@fortawesome/free-solid-svg-icons";
 import { faStar as faStarRegular } from "@fortawesome/free-regular-svg-icons";
+import { motion } from "framer-motion";
+import { FaEye } from "react-icons/fa";
 
 const DestinationCard = (props) => {
   const { openModal, closeModal } = useModal();
@@ -38,7 +40,6 @@ const DestinationCard = (props) => {
           }
         );
       },
-
     });
   };
 
@@ -58,13 +59,26 @@ const DestinationCard = (props) => {
   };
 
   return (
-    <div className="w-full h-[450px] cursor-pointer flex flex-col" onClick={handleViewDestination}>
-      <div className="h-[250px] overflow-hidden relative">
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }}
+      viewport={{ once: true }}
+      className="cursor-pointer w-full h-[450px] flex flex-col"
+    >
+      <div className="h-[250px] overflow-hidden relative group">
         <img
-          className="w-full h-full object-cover rounded-t-lg"
+          className="w-full h-full object-cover rounded-t-lg transition-transform duration-300 group-hover:scale-110"
           src={props.img}
           alt={props.title}
+          onClick={handleViewDestination}
         />
+        <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-40 transition-all duration-300 flex items-center justify-center">
+          <FaEye
+            className="text-white text-4xl transform scale-0 group-hover:scale-100 transition-transform duration-300"
+            onClick={handleViewDestination}
+          />
+        </div>
         {discount > 0 && (
           <div className="absolute top-4 right-4 bg-red-500 text-white px-3 py-1.5 rounded-lg font-bold shadow-lg transform -rotate-12">
             SAVE {discount}%
@@ -113,7 +127,7 @@ const DestinationCard = (props) => {
           <Button title="Book Tickets" onClick={handleOpenModal} />
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

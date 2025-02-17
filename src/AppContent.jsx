@@ -31,11 +31,11 @@ const AppContent = () => {
               <div id="stats">
                 <Stats />
               </div>
-              <div id="features">
-                <Features />
-              </div>
               <div id="destination">
                 <Destination />
+              </div>
+              <div id="features">
+                <Features />
               </div>
               <div id="about">
                 <About />
@@ -58,4 +58,4 @@ const AppContent = () => {
   );
 };
 
-export default AppContent; 
+export default AppContent;

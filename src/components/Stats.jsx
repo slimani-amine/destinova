@@ -1,12 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import { statsData } from "../data/statsData";
 import { motion } from "framer-motion";
 import CountUp from "react-countup";
 
 const Stats = () => {
+  const [isInView, setIsInView] = useState(false);
+
   const parseNumber = (numberString) => {
     // Remove any non-numeric characters except decimal points
-    const numericValue = numberString.replace(/[^0-9.]/g, '');
+    const numericValue = numberString.replace(/[^0-9.]/g, "");
     return parseFloat(numericValue);
   };
 
@@ -28,28 +30,34 @@ const Stats = () => {
               key={stat.id}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
               viewport={{ once: true }}
+              onViewportEnter={() => setIsInView(true)}
               className="text-center p-6 rounded-lg bg-gray-50 hover:bg-gray-100 transition-colors duration-300"
             >
-              <h3 className="text-4xl font-bold text-brightColor mb-2">
-                {stat.number.includes('k') ? (
+              <h3 className="text-4xl font-bold text-[#ff5252] mb-2">
+                {stat.number.includes("k") ? (
                   <>
-                    <CountUp
-                      end={parseNumber(stat.number)}
-                      duration={2.5}
-                      decimals={stat.number.includes('.') ? 1 : 0}
-                    />
+                    {isInView && (
+                      <CountUp
+                        start={0}
+                        end={parseNumber(stat.number)}
+                        duration={2.5}
+                        decimals={stat.number.includes(".") ? 1 : 0}
+                      />
+                    )}
                     k+
                   </>
-                ) : stat.number.includes('/') ? (
+                ) : stat.number.includes("/") ? (
                   stat.number
                 ) : (
-                  <CountUp
-                    end={parseNumber(stat.number)}
-                    duration={2.5}
-                    decimals={stat.number.includes('.') ? 1 : 0}
-                  />
+                  isInView && (
+                    <CountUp
+                      start={0}
+                      end={parseNumber(stat.number)}
+                      duration={2.5}
+                      decimals={stat.number.includes(".") ? 1 : 0}
+                    />
+                  )
                 )}
               </h3>
               <h4 className="text-xl font-semibold text-gray-800 mb-2">
@@ -64,4 +72,4 @@ const Stats = () => {
   );
 };
 
-export default Stats; 
+export default Stats;

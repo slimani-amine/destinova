@@ -2,10 +2,17 @@ import React from "react";
 import { BsFacebook } from "react-icons/bs";
 import { RiTwitterXFill } from "react-icons/ri";
 import { BsInstagram } from "react-icons/bs";
+import { motion } from "framer-motion";
 
 const Footer = () => {
   return (
-    <div className="bg-darkBackground text-white">
+    <motion.footer
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 0.5 }}
+      viewport={{ once: true }}
+      className="bg-darkBackground text-white"
+    >
       <div className="flex flex-col md:flex-row justify-between p-8 md:px-32 px-5 ">
         <div className=" w-full md:w-1/4 flex flex-col max-md:items-center">
           <h1 className=" font-semibold text-xl pb-4">TripPixie</h1>
@@ -87,7 +94,7 @@ const Footer = () => {
           </p>
         </p>
       </div>
-    </div>
+    </motion.footer>
   );
 };
 
