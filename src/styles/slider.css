@@ -1,0 +1,57 @@
+/* Custom styles for the slider */
+.slick-prev,
+.slick-next {
+  z-index: 10;
+  width: 40px;
+  height: 40px;
+}
+
+.slick-prev {
+  left: -30px;
+}
+
+.slick-next {
+  right: -30px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  font-size: 30px;
+  color: #ff6b6b;
+}
+
+.slick-dots li button:before {
+  font-size: 12px;
+  color: #ff6b6b;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #ff6b6b;
+}
+
+/* Add these new styles */
+.slick-slide {
+  padding: 0 8px;
+}
+
+.slick-list {
+  margin: 0 -8px;
+}
+
+@media (max-width: 768px) {
+  .slick-prev {
+    left: -20px;
+  }
+  
+  .slick-next {
+    right: -20px;
+  }
+
+  .slick-slide {
+    padding: 0 4px;
+  }
+
+  .slick-list {
+    margin: 0 -4px;
+  }
+} 
