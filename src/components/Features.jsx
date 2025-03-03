@@ -13,7 +13,7 @@ const Features = () => {
             Get Ready to Explore, Get Ready to Experience!
           </h1>
           <p>
-            Discover the Best Holiday Experiences with Destinova! We're
+            Discover the Best Holiday Experiences with WanderLuxe! We're
             dedicated to curating the latest and greatest destinations from
             around the world, ensuring you always get the ultimate travel
             experience.

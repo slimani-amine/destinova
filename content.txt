@@ -7,7 +7,7 @@ colors: {
 HOME -:
 Discover the Best Destinations
 
-With Destinova you can experience new travel and the best tourist
+With WanderLuxe you can experience new travel and the best tourist
 destinations that we have to offer
 
 
@@ -15,7 +15,7 @@ destinations that we have to offer
 FEATURES -:
 Get Ready to Explore, Get Ready to Experience!
 
-Discover the Best Holiday Experiences with Destinova! We're
+Discover the Best Holiday Experiences with WanderLuxe! We're
 dedicated to curating the latest and greatest destinations from
 around the world, ensuring you always get the ultimate travel
 experience.
@@ -51,7 +51,7 @@ Explore the romantic canals and historic architecture of Venice, a city built on
 
 ABOUT -:
 
-At Destinova, we are ready to provide you with the best trip of your
+At WanderLuxe, we are ready to provide you with the best trip of your
 life!
 
 Your dream vacation awaits, and we're here to make it a reality.

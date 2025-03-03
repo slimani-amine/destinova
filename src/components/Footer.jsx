@@ -15,9 +15,9 @@ const Footer = () => {
     >
       <div className="flex flex-col md:flex-row justify-between p-8 md:px-32 px-5 ">
         <div className=" w-full md:w-1/4 flex flex-col max-md:items-center">
-          <h1 className=" font-semibold text-xl pb-4">Destinova</h1>
+          <h1 className=" font-semibold text-xl pb-4">WanderLuxe</h1>
           <p className=" text-sm max-md:text-center">
-            With Destinova you can experience new travel and the best tourist
+            With WanderLuxe you can experience new travel and the best tourist
             destinations that we have to offer
           </p>
         </div>

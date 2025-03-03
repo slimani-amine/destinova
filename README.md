@@ -1,4 +1,4 @@
-# Destinova - Travel Booking Website 🌍✈️
+# WanderLuxe - Travel Booking Website 🌍✈️
 
 A modern and interactive travel booking website built with React and Vite, featuring smooth animations, destination browsing, and a seamless booking experience.
 
@@ -43,8 +43,8 @@ A modern and interactive travel booking website built with React and Vite, featu
 ### 1️⃣ Clone the repository
 
 ```bash
-git clone https://github.com/slimani-amine/destinova
-cd destinova
+git clone https://github.com/slimani-amine/wanderLuxe
+cd wanderLuxe
 ```
 
 ### 2️⃣ Install dependencies
