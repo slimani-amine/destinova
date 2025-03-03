@@ -1,64 +1,71 @@
-# TripPixie - Travel Booking Website 🌍✈️  
+# Destinova - Travel Booking Website 🌍✈️
 
-A modern and interactive travel booking website built with React and Vite, featuring smooth animations, destination browsing, and a seamless booking experience.  
+A modern and interactive travel booking website built with React and Vite, featuring smooth animations, destination browsing, and a seamless booking experience.
 
-## ✨ Features  
+## ✨ Features
 
-### 🎨 Interactive UI  
-- Smooth page transitions and scroll animations  
-- Hover effects on destination cards with previews  
-- Animated statistics using CountUp on scroll  
-- Responsive navigation with a mobile-friendly menu  
+### 🎨 Interactive UI
 
-### 🏨 Booking System  
-- Detailed destination pages  
-- Price calculation with discount support  
-- Rating system with star display  
-- Modal-based booking confirmation  
+- Smooth page transitions and scroll animations
+- Hover effects on destination cards with previews
+- Animated statistics using CountUp on scroll
+- Responsive navigation with a mobile-friendly menu
 
-### 🔥 User Experience  
-- Form validation with error handling  
-- Toast notifications for actions  
-- Fully responsive design for all devices  
-- Smooth scroll navigation  
+### 🏨 Booking System
 
-## 🛠️ Tech Stack  
+- Detailed destination pages
+- Price calculation with discount support
+- Rating system with star display
+- Modal-based booking confirmation
 
-- **Frontend Framework:** React + Vite  
-- **Styling:** Tailwind CSS  
-- **Animations:** Framer Motion  
-- **Routing:** React Router DOM  
-- **Additional Libraries:**  
-  - React Scroll  
-  - React CountUp  
-  - React Hot Toast  
-  - FontAwesome  
-  - React Icons  
+### 🔥 User Experience
 
-## 🚀 Getting Started  
+- Form validation with error handling
+- Toast notifications for actions
+- Fully responsive design for all devices
+- Smooth scroll navigation
 
-### 1️⃣ Clone the repository  
+## 🛠️ Tech Stack
+
+- **Frontend Framework:** React + Vite
+- **Styling:** Tailwind CSS
+- **Animations:** Framer Motion
+- **Routing:** React Router DOM
+- **Additional Libraries:**
+  - React Scroll
+  - React CountUp
+  - React Hot Toast
+  - FontAwesome
+  - React Icons
+
+## 🚀 Getting Started
+
+### 1️⃣ Clone the repository
+
 ```bash
-git clone https://github.com/slimani-amine/tripPixie
-cd tripPixie
+git clone https://github.com/slimani-amine/destinova
+cd destinova
 ```
 
-### 2️⃣ Install dependencies  
+### 2️⃣ Install dependencies
+
 ```bash
 npm install
 ```
 
-### 3️⃣ Run the development server  
+### 3️⃣ Run the development server
+
 ```bash
 npm run dev
 ```
 
-### 4️⃣ Build for production  
+### 4️⃣ Build for production
+
 ```bash
 npm run build
 ```
 
-## 📁 Project Structure  
+## 📁 Project Structure
 
 ```
 src/
@@ -70,31 +77,31 @@ src/
 └── assets/        # Images and static files
 ```
 
-## 🎯 Key Components  
+## 🎯 Key Components
 
-- **Destination Cards:** Interactive cards with hover effects and booking options  
-- **Statistics Section:** Animated counters triggered on scroll  
-- **Contact Form:** Validated form with real-time error feedback  
-- **Navigation:** Responsive navbar with smooth scroll  
-- **Modal System:** Reusable modal for booking confirmations  
+- **Destination Cards:** Interactive cards with hover effects and booking options
+- **Statistics Section:** Animated counters triggered on scroll
+- **Contact Form:** Validated form with real-time error feedback
+- **Navigation:** Responsive navbar with smooth scroll
+- **Modal System:** Reusable modal for booking confirmations
 
-## 🔧 Configuration  
+## 🔧 Configuration
 
-The project uses Vite for development and building. Key plugins:  
+The project uses Vite for development and building. Key plugins:
 
-- `@vitejs/plugin-react`  
-- `@vitejs/plugin-react-swc`  
+- `@vitejs/plugin-react`
+- `@vitejs/plugin-react-swc`
 
-## 📱 Responsive Design  
+## 📱 Responsive Design
 
-- Mobile-first approach  
-- Breakpoints for tablets and desktops  
-- Optimized layouts for all screen sizes  
+- Mobile-first approach
+- Breakpoints for tablets and desktops
+- Optimized layouts for all screen sizes
 
-## 🤝 Contributing  
+## 🤝 Contributing
 
-Contributions are welcome! Feel free to submit a Pull Request.  
+Contributions are welcome! Feel free to submit a Pull Request.
 
-## 📄 License  
+## 📄 License
 
-This project is licensed under the MIT License.  
+This project is licensed under the MIT License.

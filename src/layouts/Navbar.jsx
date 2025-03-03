@@ -18,7 +18,7 @@ const Navbar = () => {
     if (isHomePage) {
       // Do nothing, let react-scroll handle it
     } else {
-      navigate('/', { state: { scrollTo: section } });
+      navigate("/", { state: { scrollTo: section } });
     }
   };
 
@@ -53,7 +53,7 @@ const Navbar = () => {
       <div className="flex flex-row justify-between p-5 md:px-32 px-5 bg-darkBackground text-white">
         <div className="flex items-center">
           <RouterLink to="/">
-            <h1 className="font-semibold text-xl cursor-pointer">TripPixie</h1>
+            <h1 className="font-semibold text-xl cursor-pointer">Destinova</h1>
           </RouterLink>
         </div>
         <nav className="hidden lg:flex flex-row items-center gap-6">
@@ -99,4 +99,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar; 
+export default Navbar;
